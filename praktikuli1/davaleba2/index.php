@@ -12,7 +12,7 @@
 
         $shefaseba = '';
 
-        if($shefaseba >=91){
+        if($shefaseba >= 91){
             $shefaseba = 'A-friadi';
         } elseif($shefaseba >= 81){
             $shefaseba = 'B-dzalian kargi';
@@ -23,7 +23,6 @@
         } elseif($shefaseba >= 51){
             $shefaseba = 'E-araushavs';
         }
-        echo $shefaseba;
     }
 ?>
 <body>
