@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <?php 
-    if(isset($_POST['gagzavna'])){
-        $nishani = $_POST['nishani'];
-        echo $nishani;
+    $name = $gvari = $kursi = $skursi = $semestri = $nishani = $shefaseba = "";
 
-        $shefaseba = '';
+    if(isset($_POST['gagzavna'])){
+        $name = $_POST['name'];
+        $gvari = $_POST['gvari'];
+        $kursi = $_POST['kursi'];
+        $skursi = $_POST['skursi'];
+        $semestri = $_POST['semestri'];
+        $nishani = $_POST['nishani'];
 
         if($shefaseba >= 91){
             $shefaseba = 'A-friadi';
@@ -33,20 +37,35 @@
         <br><br>
         kursi: <input type="text" name="kursi">
         <br><br>
-        semestri: <input type="radio" name="semestri">
+        semestri: 1<input type="radio" name="semestri">
+                  2<input type="radio" name="semestri">
         <br><br>
-        s.kursi: <input type="text" name="s.kursi">
+        s.kursi: <input type="text" name="skursi">
         <br><br>
         nishani: <input type="number" name="nishani">
         <br><br>
-        <button type="submit" value="gagzavna">send</button>
+        <button type="submit" name="gagzavna">send</button>
     </form>
+
+<?php if(isset($_POST['gagzavna'])){ ?>
 
     <table border="1">
         <tr>
-            <td><?php echo $shefaseba ?></td>
-            <td><?php echo $nishani ?></td>
+            <th>saxeli</th>
+            <th>gvari</th>
+            <th>kursi</th>
+            <th>s.kursi</th>
+            <th>nishani</th>
+        </tr>
+        <tr>
+            <td><?php echo $name; ?></td>
+            <td><?php echo $gvari; ?></td>
+            <td><?php echo $kursi; ?></td>
+            <td><?php echo $skursi; ?></td>
+            <td><?php echo $nishani; ?></td>
+            <td><?php echo $shefaseba; ?></td>
         </tr>
     </table>
+<?php } ?>
 </body>
 </html>

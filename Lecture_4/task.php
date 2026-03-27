@@ -10,7 +10,7 @@
     <form method="post">
         <a href="task.php">HOME</a>
         <h1>PHP Form Validation Example</h1>
-    Name: <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo $_POST['name'];  else  echo " ";  ?>"> - *
+        Name: <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo $_POST['name'];  else  echo " ";  ?>"> - *
         <br><br>
         E-mail: <input type="text" name="emial" value="<?php echo isset($_POST['name']) ? $_POST['name'] : " "; ?>"> - *
         <br><br>

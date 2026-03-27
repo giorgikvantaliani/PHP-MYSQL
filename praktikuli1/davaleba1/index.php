@@ -32,6 +32,7 @@
 
         $salary20 = $salary - ($salary * 0.2);
         $procentcustom = $salary - ($salary * $procent/100);
+        echo "procentcustom:". $procentcustom . "saalry20:" . $salary20;
     
     ?>
 
