@@ -12,7 +12,7 @@
         <h1>PHP Form Validation Example</h1>
         Name: <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo $_POST['name'];  else  echo " ";  ?>"> - *
         <br><br>
-        E-mail: <input type="text" name="emial" value="<?php echo isset($_POST['name']) ? $_POST['name'] : " "; ?>"> - *
+        E-mail: <input type="text" name="emial" value="<?php echo isset($_POST['email']) ? $_POST['email'] : " "; ?>"> - *
         <br><br>
         Website: <input type="text" name="website">
         <br><br>
@@ -32,16 +32,14 @@
 
             if(isset($_POST['submit-form'])){
                 echo "<h3>Clicked</h3>";
+                
                 if(empty($_POST['name'])){
                     echo "<p>Name is Empty!!!!</p>";
                 }
 
-                if(empty($_POST['emial'])){
+                if(empty($_POST['email'])){
                     echo "<p>Email is Empty!!!!</p>";
                 }
-
-
-
             }
         ?>
     </div>
