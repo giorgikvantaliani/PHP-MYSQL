@@ -74,7 +74,7 @@ if (isset($_GET['delete_team'])) {
 
 $drivers = mysqli_query($conn, "SELECT * FROM drivers");
 $circuits = mysqli_query($conn, "SELECT * FROM circuits");
-$teams = mysqli_query($conn, "SELECT * FROM teams"); // 🆕
+$teams = mysqli_query($conn, "SELECT * FROM teams"); 
 ?>
 <!DOCTYPE html>
 <html lang="ka">
